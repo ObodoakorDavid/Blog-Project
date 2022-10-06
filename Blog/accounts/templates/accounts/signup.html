@@ -2,10 +2,9 @@
 
 {% extends 'base.html' %} {% block content %}
 
-<h1>Sign Up</h1>
+<h1 class="sign-up">Sign Up</h1>
 <form class="site-form" action="" action="/accounts/signup/" method="post">
-    {% csrf_token %}
-  {{ form }} <input type="submit" value="Signup" />
+  {% csrf_token %} {{ form }} <input type="submit" value="Signup" />
 </form>
 
 {% endblock %}

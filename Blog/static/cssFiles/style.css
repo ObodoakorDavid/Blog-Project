@@ -14,15 +14,14 @@ h5 {
   margin: 0;
 }
 
-a.highlight {
+header a {
   border: 1px solid #00dba0;
   padding: 10px;
   border-radius: 4px;
   color: #00dba0;
 }
 
-a,
-a:hover {
+a {
   color: #fff;
   text-decoration: none;
 }
@@ -59,6 +58,14 @@ nav button {
   cursor: pointer;
   border: 0;
   font-size: 1em;
+}
+
+.article-list,
+.sign-up,
+.log-in,
+.home {
+  text-align: center;
+  padding: 20px 0;
 }
 
 .articles {
@@ -114,6 +121,9 @@ nav button {
   border: 1px solid #00dba0;
   padding: 20px;
   border-radius: 5px;
+  /* width: 95%; */
+  max-width: 380px;
+  margin: 0 auto;
 }
 
 .site-form input,
@@ -121,11 +131,16 @@ nav button {
   display: block;
   margin: 20px 0 0 0;
   padding: 10px;
+  width: 95%;
+  max-width: 380px;
 }
 
-nav {
+nav ul {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
+  max-width: 380px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .helptext,
@@ -136,7 +151,7 @@ nav {
   display: block;
 }
 
-.errorlist li{
+.errorlist li {
   padding: 10px;
   list-style-type: none;
   border: 1px solid #ff5722;
@@ -148,12 +163,19 @@ nav {
   padding: 0;
 }
 
-.site-form input[type='submit']{
+.site-form input[type="submit"] {
   background: #00dba0;
   border: 0;
   color: #fff;
   font-size: 1.2em;
   border-radius: 4px;
   margin: 10px 0;
+  margin-left: 10px;
+  width: 95%;
+  max-width: 400px;
+}
 
+a:hover {
+  cursor: pointer;
+  color: #00dba0;
 }
